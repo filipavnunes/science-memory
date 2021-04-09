@@ -14,6 +14,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { InitialScreenComponent } from './initial-screen/initial-screen.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MatIconModule } from '@angular/material/icon';
     InitalMenuComponent,
     GameComponent,
     GameCardComponent,
-    RestartDialogComponent
+    RestartDialogComponent,
+    InitialScreenComponent
   ],
   imports: [
     BrowserModule,
