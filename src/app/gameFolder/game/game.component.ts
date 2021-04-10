@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { RestartDialogComponent } from '../restart-dialog/restart-dialog.component';
-import { CardData } from '../shared/models/card-data.model';
+import { CardData } from '../../shared/models/card-data.model';
+import {Location} from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-game',
@@ -18,6 +20,7 @@ export class GameComponent implements OnInit {
     'TQ-q5WAVHj0'
   ];
 
+
   cards: CardData[] = [];
   
   flippedCards: CardData[] = [];
@@ -30,12 +33,45 @@ export class GameComponent implements OnInit {
       .map(a => a[1]);
   }
 
-  constructor(private dialog: MatDialog) {
+  constructor(private dialog: MatDialog, private _location: Location, private router: Router) {
 
   }
 
   ngOnInit(): void {
     this.setupCards();
+
+    if(this.router.url.includes('dinossaur')){
+      //MUDAR PARA OS IDS APROPRIADOS
+      this.cardImages = [
+        'pDGNBK9A0sk',
+        'fYDrhbVlV1E',
+        'qoXgaF27zBc',
+        'b9drVB7xIOI',
+        'TQ-q5WAVHj0'
+      ];
+    }
+
+    if(this.router.url.includes('space')){
+      //MUDAR PARA OS IDS APROPRIADOS
+      this.cardImages = [
+        'pDGNBK9A0sk',
+        'fYDrhbVlV1E',
+        'qoXgaF27zBc',
+        'b9drVB7xIOI',
+        'TQ-q5WAVHj0'
+      ];
+    }
+
+    if(this.router.url.includes('lego')){
+     //MUDAR PARA OS IDS APROPRIADOS
+      this.cardImages = [
+        'pDGNBK9A0sk',
+        'fYDrhbVlV1E',
+        'qoXgaF27zBc',
+        'b9drVB7xIOI',
+        'TQ-q5WAVHj0'
+      ];
+    }
   }
 
   setupCards(): void {
@@ -94,6 +130,10 @@ export class GameComponent implements OnInit {
       }
 
     }, 1000);
+  }
+
+  goBack(){
+    this._location.back();
   }
 
   restart(): void {

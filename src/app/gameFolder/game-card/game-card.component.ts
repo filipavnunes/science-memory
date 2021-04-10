@@ -1,6 +1,6 @@
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { CardData } from '../shared/models/card-data.model';
+import { CardData } from '../../shared/models/card-data.model';
 
 @Component({
   selector: 'app-game-card',

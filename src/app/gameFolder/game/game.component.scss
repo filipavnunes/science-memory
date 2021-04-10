@@ -1,0 +1,44 @@
+.p-16{
+    height: 100%;
+
+    .top-navBar{
+        width: 100%;
+        height: 5%;
+        background: rgb(139, 184, 178);
+        margin-bottom: 5%;
+
+        .goBack-section{
+            height: 100%;
+            width: calc(45px + 20%);
+
+            .goBack-text{
+                font-size: 35px;
+                vertical-align: super;
+            }
+        }
+
+        .material-icons{
+            font-size: 45px;
+            width: 45px;
+            vertical-align: sub;
+        }
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    gap: 5%;
+
+    justify-content: center;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(2, 150px);
+    }
+}
