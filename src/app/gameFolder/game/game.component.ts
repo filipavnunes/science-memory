@@ -12,34 +12,15 @@ import { Router } from '@angular/router';
 })
 export class GameComponent implements OnInit {
 
-  cardImages = [
-    'pDGNBK9A0sk',
-    'fYDrhbVlV1E',
-    'qoXgaF27zBc',
-    'b9drVB7xIOI',
-    'TQ-q5WAVHj0'
-  ];
-
-
-  cards: CardData[] = [];
-  
+  cardImages: string[] = [];
+  cards: CardData[] = [];  
   flippedCards: CardData[] = [];
-
   matchedCount = 0;
 
-  shuffleArray(anArray: any[]): any[] {
-    return anArray.map(a => [Math.random(), a])
-      .sort((a, b) => a[0] - b[0])
-      .map(a => a[1]);
-  }
-
   constructor(private dialog: MatDialog, private _location: Location, private router: Router) {
-
   }
 
   ngOnInit(): void {
-    this.setupCards();
-
     if(this.router.url.includes('dinossaur')){
       //MUDAR PARA OS IDS APROPRIADOS
       this.cardImages = [
@@ -65,13 +46,22 @@ export class GameComponent implements OnInit {
     if(this.router.url.includes('lego')){
      //MUDAR PARA OS IDS APROPRIADOS
       this.cardImages = [
-        'pDGNBK9A0sk',
-        'fYDrhbVlV1E',
-        'qoXgaF27zBc',
-        'b9drVB7xIOI',
-        'TQ-q5WAVHj0'
+        'CXDw96Oy-Yw',
+        'YrMjQFkXYIs',        
+        'vSUc4FmgkDg',        
+        'ArA3S3k0wTU',        
+        'lopW3VcAUU0',
+        '-1v0JL_wINc'
       ];
     }
+
+    this.setupCards();
+  }
+
+  shuffleArray(anArray: any[]): any[] {
+    return anArray.map(a => [Math.random(), a])
+      .sort((a, b) => a[0] - b[0])
+      .map(a => a[1]);
   }
 
   setupCards(): void {
