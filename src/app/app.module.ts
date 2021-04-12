@@ -15,6 +15,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { InitialScreenComponent } from './initial-screen/initial-screen.component';
+import { PromptUpdateService } from './services/prompt-update.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,7 @@ import { InitialScreenComponent } from './initial-screen/initial-screen.componen
     MatIconModule,
     MatDialogModule
   ],
-  providers: [],
+  providers: [PromptUpdateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
