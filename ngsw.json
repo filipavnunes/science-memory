@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1618309800847,
+  "timestamp": 1618323344310,
   "index": "https://filipavnunes.github.io/science-memory/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://filipavnunes.github.io/science-memory/favicon.ico",
         "https://filipavnunes.github.io/science-memory/index.html",
-        "https://filipavnunes.github.io/science-memory/main.453ab27c1cd3b309ccaa.js",
+        "https://filipavnunes.github.io/science-memory/main.dd11b2ecd8c6ee07160e.js",
         "https://filipavnunes.github.io/science-memory/manifest.webmanifest",
         "https://filipavnunes.github.io/science-memory/polyfills.94daefd414b8355106ab.js",
         "https://filipavnunes.github.io/science-memory/runtime.7b63b9fd40098a2e8207.js",
@@ -31,6 +31,7 @@
       "urls": [
         "https://filipavnunes.github.io/science-memory/assets/back-card.png",
         "https://filipavnunes.github.io/science-memory/assets/game-options-images/JW_T-Rex.png",
+        "https://filipavnunes.github.io/science-memory/assets/game-options-images/aviao.png",
         "https://filipavnunes.github.io/science-memory/assets/game-options-images/carro.png",
         "https://filipavnunes.github.io/science-memory/assets/game-options-images/lego.png",
         "https://filipavnunes.github.io/science-memory/assets/game-options-images/nave-espacial.png",
@@ -44,7 +45,7 @@
         "https://filipavnunes.github.io/science-memory/assets/icons/icon-96x96.png",
         "https://filipavnunes.github.io/science-memory/assets/three-dots.svg",
         "https://filipavnunes.github.io/science-memory/icon-512x512.486c2f0d73e21eeb199a.png",
-        "https://filipavnunes.github.io/science-memory/three-dots.6d13688e2d26a8aeedf1.svg"
+        "https://filipavnunes.github.io/science-memory/three-dots.4fd200a792caadc452f9.svg"
       ],
       "patterns": []
     }
@@ -53,6 +54,7 @@
   "hashTable": {
     "https://filipavnunes.github.io/science-memory/assets/back-card.png": "d20e87e008391d7953c3ea478185dbb429a233a2",
     "https://filipavnunes.github.io/science-memory/assets/game-options-images/JW_T-Rex.png": "13e0e58984a80d2f413d22efd39a302f346502b7",
+    "https://filipavnunes.github.io/science-memory/assets/game-options-images/aviao.png": "ff0306b04779abc9a6b962ccfe4299558df49851",
     "https://filipavnunes.github.io/science-memory/assets/game-options-images/carro.png": "dacd578597d8fc0113a0573ee3e3fcada3758b76",
     "https://filipavnunes.github.io/science-memory/assets/game-options-images/lego.png": "1f725f901e61b766f50b5bf850f46c2691de08bf",
     "https://filipavnunes.github.io/science-memory/assets/game-options-images/nave-espacial.png": "22e2b873340b88c51044a33b542cf2a573e9a51d",
@@ -64,16 +66,16 @@
     "https://filipavnunes.github.io/science-memory/assets/icons/icon-512x512.png": "9204438c5f8f4169ce6d5f33dc777cc601723ebf",
     "https://filipavnunes.github.io/science-memory/assets/icons/icon-72x72.png": "091357371b8697233050d371a358d28b6e086481",
     "https://filipavnunes.github.io/science-memory/assets/icons/icon-96x96.png": "09849943e9f85fedee933089135c6c3afe74966a",
-    "https://filipavnunes.github.io/science-memory/assets/three-dots.svg": "d7d2b2eb47c966e25b262e539f53be04f1156ed8",
+    "https://filipavnunes.github.io/science-memory/assets/three-dots.svg": "3a93ee8ecf0d7c2592681e130277f6510ab4d9d7",
     "https://filipavnunes.github.io/science-memory/favicon.ico": "8ba6d84511be78ba63b2dc339da813114e491773",
     "https://filipavnunes.github.io/science-memory/icon-512x512.486c2f0d73e21eeb199a.png": "9204438c5f8f4169ce6d5f33dc777cc601723ebf",
-    "https://filipavnunes.github.io/science-memory/index.html": "84d85c3a03dc3a524829f8185a6dffaf34093753",
-    "https://filipavnunes.github.io/science-memory/main.453ab27c1cd3b309ccaa.js": "0182cd17385b39f12d9f5bb3225c953224ab452c",
-    "https://filipavnunes.github.io/science-memory/manifest.webmanifest": "a04f5ec55c5bfd71f0f3cc6dc003cc089bce9570",
+    "https://filipavnunes.github.io/science-memory/index.html": "c3b99d12c1a1653717673e5da9acca5736d6849b",
+    "https://filipavnunes.github.io/science-memory/main.dd11b2ecd8c6ee07160e.js": "bdbe3541c3a5c86aa78aa4386a1395f6066718ac",
+    "https://filipavnunes.github.io/science-memory/manifest.webmanifest": "7e0a7b2ae9d1b188c49d6df056d0217c7e327091",
     "https://filipavnunes.github.io/science-memory/polyfills.94daefd414b8355106ab.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
     "https://filipavnunes.github.io/science-memory/runtime.7b63b9fd40098a2e8207.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
     "https://filipavnunes.github.io/science-memory/styles.e1a9e6a25d89c9e6c1e6.css": "6b8d71643b1bfd44b5dfbc72075d9825b5517e21",
-    "https://filipavnunes.github.io/science-memory/three-dots.6d13688e2d26a8aeedf1.svg": "d7d2b2eb47c966e25b262e539f53be04f1156ed8"
+    "https://filipavnunes.github.io/science-memory/three-dots.4fd200a792caadc452f9.svg": "3a93ee8ecf0d7c2592681e130277f6510ab4d9d7"
   },
   "navigationUrls": [
     {
