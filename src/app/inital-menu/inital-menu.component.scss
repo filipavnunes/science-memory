@@ -1,7 +1,13 @@
 .menu-wrapper{
+    width: 100%;
+    height: 100%;
     .app-icon{
         text-align-last: center;
-        margin-top: 6%;
+        padding-top: 6%;
+    }
+
+    .row{
+        margin-right: 0px;
     }
 
     .game-options{
@@ -29,6 +35,16 @@
 
             .option-img {
                 height: 300px;
+            }
+
+            .icon-row{
+                width: 100%;
+
+                mat-icon{
+                    float: right;
+                    color: #F6AE2D;
+                    cursor: pointer;
+                }
             }
         }
     }

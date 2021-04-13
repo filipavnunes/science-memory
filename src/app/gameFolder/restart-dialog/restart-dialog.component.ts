@@ -13,6 +13,7 @@ export class RestartDialogComponent implements OnInit {
 
 
   ngOnInit(): void {
+    this.speech.lang = 'pt';
     this.speech.text = "Parabéns! Completaste o Jogo!";
     window.speechSynthesis.speak(this.speech);
   }

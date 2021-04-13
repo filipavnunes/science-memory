@@ -16,6 +16,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { InitialScreenComponent } from './initial-screen/initial-screen.component';
 import { PromptUpdateService } from './services/prompt-update.service';
+import { InitialMenuVideoComponent } from './initial-menu-video/initial-menu-video.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +27,8 @@ import { PromptUpdateService } from './services/prompt-update.service';
     GameComponent,
     GameCardComponent,
     RestartDialogComponent,
-    InitialScreenComponent
+    InitialScreenComponent,
+    InitialMenuVideoComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +38,8 @@ import { PromptUpdateService } from './services/prompt-update.service';
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
-    MatDialogModule
+    MatDialogModule,
+    MatTooltipModule
   ],
   providers: [PromptUpdateService],
   bootstrap: [AppComponent]

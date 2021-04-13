@@ -55,6 +55,18 @@ export class GameComponent implements OnInit {
       ];
     }
 
+    if(this.router.url.includes('car')){
+      //MUDAR PARA OS IDS APROPRIADOS
+       this.cardImages = [
+         'CXDw96Oy-Yw',
+         'YrMjQFkXYIs',        
+         'vSUc4FmgkDg',        
+         'ArA3S3k0wTU',        
+         'lopW3VcAUU0',
+         '-1v0JL_wINc'
+       ];
+     }
+
     this.setupCards();
   }
 
