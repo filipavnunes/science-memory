@@ -35,11 +35,12 @@ export class GameComponent implements OnInit {
     if(this.router.url.includes('space')){
       //MUDAR PARA OS IDS APROPRIADOS
       this.cardImages = [
-        'pDGNBK9A0sk',
-        'fYDrhbVlV1E',
-        'qoXgaF27zBc',
-        'b9drVB7xIOI',
-        'TQ-q5WAVHj0'
+        'hpt0AJPZ0Aw',
+        'U2uKrI4lci8',
+        'e5eDHbmHprg',
+        'Ed2AELHKYBw',
+        '5_Z3YVosrCw',
+        '8_C1mNcgWiQ'
       ];
     }
 
@@ -55,15 +56,15 @@ export class GameComponent implements OnInit {
       ];
     }
 
-    if(this.router.url.includes('car')){
+    if(this.router.url.includes('aviao')){
       //MUDAR PARA OS IDS APROPRIADOS
        this.cardImages = [
-         'CXDw96Oy-Yw',
-         'YrMjQFkXYIs',        
-         'vSUc4FmgkDg',        
-         'ArA3S3k0wTU',        
-         'lopW3VcAUU0',
-         '-1v0JL_wINc'
+        'C-LJdc61G2w',
+        'c5F1hhK5t0Q',
+        'CdlhHc3nEkk',
+        '0r5Hn8IG5cQ',
+        'u-1cYIua_aI',
+        '3aLBjkdzT-U'
        ];
      }
 

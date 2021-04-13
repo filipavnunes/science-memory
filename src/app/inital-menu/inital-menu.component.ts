@@ -29,8 +29,8 @@ export class InitalMenuComponent implements OnInit {
       case 'lego':
         this.router.navigate(['game', 'lego']);
         break;
-      case 'car':
-        this.router.navigate(['game', 'car']);
+      case 'aviao':
+        this.router.navigate(['game', 'aviao']);
         break;
     }
   }
