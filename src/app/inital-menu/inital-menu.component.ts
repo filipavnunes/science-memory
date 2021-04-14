@@ -11,8 +11,14 @@ import { InitialMenuVideoComponent } from '../initial-menu-video/initial-menu-vi
 export class InitalMenuComponent implements OnInit {
 
   speech = new SpeechSynthesisUtterance();
+  displayInitialScreen: boolean = true;
 
-  constructor(private router: Router, private dialog: MatDialog) { }
+  constructor(private router: Router, private dialog: MatDialog) {
+    const { state } = this.router.getCurrentNavigation()?.extras || {};
+    if (state) {
+        this.displayInitialScreen = state.displayInitialScreen;
+    }
+  }
 
   ngOnInit(): void {
   }

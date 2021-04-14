@@ -1,15 +1,14 @@
 .p-16{
-    height: 100%;
+    margin-bottom: 20px;
 
     .top-navBar{
         width: 100%;
         height: 5%;
         background: rgb(139, 184, 178);
-        margin-bottom: 5%;
+        margin-bottom: 20px;
 
         .goBack-section{
             height: 100%;
-            width: calc(45px + 20%);
 
             .goBack-text{
                 font-size: 35px;
@@ -27,9 +26,8 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(5, 150px);
-    gap: 5%;
-
+    grid-template-columns: repeat(4, 150px);
+    gap: 10px 20px;
     justify-content: center;
 }
 
@@ -39,6 +37,21 @@
 
 @media (max-width: 600px) {
     .grid {
-        grid-template-columns: repeat(2, 150px);
+        grid-template-columns: repeat(3, 80px);
+    }
+
+    .p-16 {
+        .top-navBar {
+            .goBack-section {
+                .goBack-text {
+                    font-size: 25px;
+                }
+            }
+
+            .material-icons{
+                font-size: 35px;
+                width: 35px;
+            }
+        }
     }
 }

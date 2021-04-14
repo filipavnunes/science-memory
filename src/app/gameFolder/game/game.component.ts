@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { RestartDialogComponent } from '../restart-dialog/restart-dialog.component';
 import { CardData } from '../../shared/models/card-data.model';
-import {Location} from '@angular/common';
 import { Router } from '@angular/router';
 
 @Component({
@@ -17,7 +16,7 @@ export class GameComponent implements OnInit {
   flippedCards: CardData[] = [];
   matchedCount = 0;
 
-  constructor(private dialog: MatDialog, private _location: Location, private router: Router) {
+  constructor(private dialog: MatDialog, private router: Router) {
   }
 
   ngOnInit(): void {
@@ -136,7 +135,7 @@ export class GameComponent implements OnInit {
   }
 
   goBack(){
-    this._location.back();
+    this.router.navigateByUrl('/', { state: { displayInitialScreen: false } });
   }
 
   restart(): void {
