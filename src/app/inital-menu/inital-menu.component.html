@@ -8,7 +8,7 @@
     <div class="row game-options first-row">
         <div class="option left-side dark-blue">
             <div class="icon-row">
-                <mat-icon (click) = "openVideoDialog('dinossaur')" matTooltip= "Vídeo Informativo">info</mat-icon>
+                <mat-icon class="pointer" (click) = "openVideoDialog('dinossaur')" matTooltip= "Vídeo Informativo">info</mat-icon>
             </div>
             <img (mouseover)="speak('dinossauro')" (click)="openBoardGame('dino')"
                 src="assets/game-options-images/JW_T-Rex.png" click="openBoardGame('dino')" alt="Dinossaur Option"
@@ -18,7 +18,7 @@
 
         <div class="option right-side orange">
             <div class="icon-row">
-                <mat-icon (click) = "openVideoDialog('space')" matTooltip= "Vídeo Informativo">info</mat-icon>
+                <mat-icon class="pointer" (click) = "openVideoDialog('space')" matTooltip= "Vídeo Informativo">info</mat-icon>
             </div>
             <img (mouseover)="speak('espaço')" (click)="openBoardGame('space')"
                 src="assets/game-options-images/nave-espacial.png" alt="Space Option" class="option-img">
@@ -27,8 +27,8 @@
     </div>
     <div class="row game-options last-row">
         <div class="option left-side yellow">
-            <div class="icon-row">
-                <mat-icon (click) = "openVideoDialog('lego')" matTooltip= "Vídeo Informativo">info</mat-icon>
+            <div class="icon-row ">
+                <mat-icon class="pointer" (click) = "openVideoDialog('lego')" matTooltip= "Vídeo Informativo">info</mat-icon>
             </div>
             <img (mouseover)="speak('lego')" (click)="openBoardGame('lego')" src="assets/game-options-images/lego.png"
                 alt="Lego Option" class="option-img">
@@ -37,7 +37,7 @@
 
         <div class="option right-side light-blue">
             <div class="icon-row">
-                <mat-icon (click) = "openVideoDialog('aviao')" matTooltip= "Vídeo Informativo">info</mat-icon>
+                <mat-icon class="pointer" (click) = "openVideoDialog('aviao')" matTooltip= "Vídeo Informativo">info</mat-icon>
             </div>
             <img (mouseover)="speak('avião')" (click)="openBoardGame('aviao')" width="300" height="370"
                 src="assets/game-options-images/aviao.png" alt="Airplane Option" class="option-img">

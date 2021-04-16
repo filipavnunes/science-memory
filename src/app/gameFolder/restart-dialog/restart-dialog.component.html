@@ -3,5 +3,10 @@
     Completaste o jogo
 </mat-dialog-content>
 <mat-dialog-actions align="end">
-    <button mat-raised-button [mat-dialog-close]="true" cdkFocusInitial>Jogar novamente</button>
+    <button mat-raised-button [mat-dialog-close]="true" cdkFocusInitial>
+        <mat-icon>refresh</mat-icon>
+    </button>
+    <button mat-raised-button (click)="redirectHome()" cdkFocusInitial>
+        <mat-icon>home</mat-icon>
+    </button>
 </mat-dialog-actions>
