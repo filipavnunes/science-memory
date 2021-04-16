@@ -43,7 +43,7 @@ export class InitalMenuComponent implements OnInit {
 
   speak(type: string) {
     this.speech.text = type;
-    //this.speech.lang = 'pt';
+    this.speech.lang = 'pt-BR';
     console.log(this.speech)
     window.speechSynthesis.speak(this.speech);
   }
