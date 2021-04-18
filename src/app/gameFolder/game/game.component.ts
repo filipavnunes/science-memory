@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 export class GameComponent implements OnInit {
 
   cardImages: string[] = [];
-  cards: CardData[] = [];  
+  cards: CardData[] = [];
   flippedCards: CardData[] = [];
   matchedCount = 0;
 
@@ -20,18 +20,19 @@ export class GameComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    if(this.router.url.includes('dinossaur')){
+    if (this.router.url.includes('dinossaur')) {
       //MUDAR PARA OS IDS APROPRIADOS
       this.cardImages = [
-        'pDGNBK9A0sk',
-        'fYDrhbVlV1E',
-        'qoXgaF27zBc',
-        'b9drVB7xIOI',
-        'TQ-q5WAVHj0'
+        'hYKG311mff8',
+        '-15ZMeUKtJM',
+        'Fl0GNjfFdXg',
+        'cYNF1EdbMJk',
+        'sw32fhWhN68',
+        '7_yzujmD8AE'
       ];
     }
 
-    if(this.router.url.includes('space')){
+    if (this.router.url.includes('space')) {
       //MUDAR PARA OS IDS APROPRIADOS
       this.cardImages = [
         'hpt0AJPZ0Aw',
@@ -43,29 +44,29 @@ export class GameComponent implements OnInit {
       ];
     }
 
-    if(this.router.url.includes('lego')){
-     //MUDAR PARA OS IDS APROPRIADOS
+    if (this.router.url.includes('lego')) {
+      //MUDAR PARA OS IDS APROPRIADOS
       this.cardImages = [
         'CXDw96Oy-Yw',
-        'YrMjQFkXYIs',        
-        'vSUc4FmgkDg',        
-        'ArA3S3k0wTU',        
+        'YrMjQFkXYIs',
+        'vSUc4FmgkDg',
+        'ArA3S3k0wTU',
         'lopW3VcAUU0',
         '-1v0JL_wINc'
       ];
     }
 
-    if(this.router.url.includes('aviao')){
+    if (this.router.url.includes('aviao')) {
       //MUDAR PARA OS IDS APROPRIADOS
-       this.cardImages = [
+      this.cardImages = [
         'C-LJdc61G2w',
         'c5F1hhK5t0Q',
         'CdlhHc3nEkk',
         '0r5Hn8IG5cQ',
         'u-1cYIua_aI',
         '3aLBjkdzT-U'
-       ];
-     }
+      ];
+    }
 
     this.setupCards();
   }
@@ -84,8 +85,8 @@ export class GameComponent implements OnInit {
         state: 'default'
       };
 
-      this.cards.push({...cardData});
-      this.cards.push({...cardData});
+      this.cards.push({ ...cardData });
+      this.cards.push({ ...cardData });
     });
 
     this.cards = this.shuffleArray(this.cards);
@@ -134,7 +135,7 @@ export class GameComponent implements OnInit {
     }, 1000);
   }
 
-  goBack(){
+  goBack() {
     this.router.navigateByUrl('/', { state: { displayInitialScreen: false } });
   }
 
