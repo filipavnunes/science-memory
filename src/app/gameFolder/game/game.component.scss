@@ -36,6 +36,11 @@
     cursor: pointer;
 }
 
+canvas {
+    width: 100%;
+    height: calc(100% - (5% + 20px + 20px + 600px));
+}
+
 @media (max-width: 600px) {
     .grid {
         grid-template-columns: repeat(3, 80px);

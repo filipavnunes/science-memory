@@ -18,6 +18,7 @@ import { InitialScreenComponent } from './initial-screen/initial-screen.componen
 import { PromptUpdateService } from './services/prompt-update.service';
 import { InitialMenuVideoComponent } from './initial-menu-video/initial-menu-video.component';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { InicialMenuHelpComponent } from './inicial-menu-help/inicial-menu-help.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     RestartDialogComponent,
     InitialScreenComponent,
     InitialMenuVideoComponent,
+    InicialMenuHelpComponent,
   ],
   imports: [
     BrowserModule,

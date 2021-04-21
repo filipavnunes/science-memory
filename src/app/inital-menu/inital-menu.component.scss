@@ -3,6 +3,18 @@
     height: 100%;
     color: white;
 
+    .d-flex{
+        display: inline-flex !important;
+
+        .bigIcon{
+            font-size: 45px;
+        }
+    }
+
+    .right{
+        float: right;
+    }
+
     .app-icon{
         text-align-last: center;
         padding-top: 2%;
@@ -91,6 +103,10 @@
 
     .last-row {
         padding-bottom: 70px;
+    }
+
+    .pointer{
+        cursor: pointer;
     }
 }
 

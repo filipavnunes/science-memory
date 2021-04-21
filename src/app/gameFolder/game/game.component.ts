@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, Renderer2 } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { RestartDialogComponent } from '../restart-dialog/restart-dialog.component';
 import { CardData } from '../../shared/models/card-data.model';
 import { Router } from '@angular/router';
+import * as confetti from 'canvas-confetti';
 
 @Component({
   selector: 'app-game',
@@ -16,7 +17,8 @@ export class GameComponent implements OnInit {
   flippedCards: CardData[] = [];
   matchedCount = 0;
 
-  constructor(private dialog: MatDialog, private router: Router) {
+  constructor(private dialog: MatDialog, private router: Router, private renderer2: Renderer2,
+    private elementRef: ElementRef) {
   }
 
   ngOnInit(): void {
@@ -122,6 +124,22 @@ export class GameComponent implements OnInit {
         this.matchedCount++;
 
         if (this.matchedCount === this.cardImages.length) {
+          const canvas = this.renderer2.createElement('canvas');
+
+          this.renderer2.appendChild(this.elementRef.nativeElement, canvas);
+
+          const myConfetti = confetti.create(canvas, {
+            resize: true
+          });
+
+          myConfetti({
+            angle: this.randomInRange(55, 125),
+            spread: this.randomInRange(50, 70),
+            particleCount: this.randomInRange(50, 100),
+            origin: { y: 0.6 }
+          });
+
+          myConfetti();
           const dialogRef = this.dialog.open(RestartDialogComponent, {
             disableClose: true
           });
@@ -142,5 +160,9 @@ export class GameComponent implements OnInit {
   restart(): void {
     this.matchedCount = 0;
     this.setupCards();
+  }
+
+  randomInRange(min: any, max: any) {
+    return Math.random() * (max - min) + min;
   }
 }

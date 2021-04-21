@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { InicialMenuHelpComponent } from '../inicial-menu-help/inicial-menu-help.component';
 import { InitialMenuVideoComponent } from '../initial-menu-video/initial-menu-video.component';
 
 @Component({
@@ -16,7 +17,7 @@ export class InitalMenuComponent implements OnInit {
   constructor(private router: Router, private dialog: MatDialog) {
     const { state } = this.router.getCurrentNavigation()?.extras || {};
     if (state) {
-        this.displayInitialScreen = state.displayInitialScreen;
+      this.displayInitialScreen = state.displayInitialScreen;
     }
   }
 
@@ -52,5 +53,9 @@ export class InitalMenuComponent implements OnInit {
     const dialogRef = this.dialog.open(InitialMenuVideoComponent, {
       data: videoSection
     });
+  }
+
+  openInfoDialog() {
+    const dialogRef = this.dialog.open(InicialMenuHelpComponent);
   }
 }
