@@ -111,6 +111,11 @@
 }
 
 @media (max-width: 600px) {
+    .right{
+        float: right;
+        margin-right: 5%;
+    }
+
     .menu-wrapper {
         .app-icon {
             .logo {
