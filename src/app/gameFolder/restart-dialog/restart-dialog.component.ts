@@ -22,7 +22,7 @@ export class RestartDialogComponent implements OnInit {
 
   redirectHome(){
     this.dialogRef.close();
-    this.router.navigate(['../']);
+    this.router.navigateByUrl('/', { state: { displayInitialScreen: false } });
   }
 
 }

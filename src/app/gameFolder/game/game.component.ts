@@ -145,6 +145,13 @@ export class GameComponent implements OnInit {
           });
 
           dialogRef.afterClosed().subscribe(() => {
+            const appGame = document.querySelector('app-game');
+            const canvasElem = document.querySelector('canvas');
+
+            if (appGame && canvasElem) {
+              appGame.removeChild(canvasElem);
+            }
+            
             this.restart();
           });
         }
