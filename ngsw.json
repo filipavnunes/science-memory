@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1619284384957,
+  "timestamp": 1620055768438,
   "index": "https://filipavnunes.github.io/science-memory/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://filipavnunes.github.io/science-memory/favicon.ico",
         "https://filipavnunes.github.io/science-memory/index.html",
-        "https://filipavnunes.github.io/science-memory/main.d89944ba35b23470e81d.js",
+        "https://filipavnunes.github.io/science-memory/main.75bf36716d8dd5c67b9d.js",
         "https://filipavnunes.github.io/science-memory/manifest.webmanifest",
         "https://filipavnunes.github.io/science-memory/polyfills.94daefd414b8355106ab.js",
         "https://filipavnunes.github.io/science-memory/runtime.7b63b9fd40098a2e8207.js",
@@ -69,8 +69,8 @@
     "https://filipavnunes.github.io/science-memory/assets/three-dots.svg": "d7d2b2eb47c966e25b262e539f53be04f1156ed8",
     "https://filipavnunes.github.io/science-memory/favicon.ico": "8ba6d84511be78ba63b2dc339da813114e491773",
     "https://filipavnunes.github.io/science-memory/icon-512x512.486c2f0d73e21eeb199a.png": "9204438c5f8f4169ce6d5f33dc777cc601723ebf",
-    "https://filipavnunes.github.io/science-memory/index.html": "6bd9d4b573d2bd5c8d371746641e58f0f2e8d95a",
-    "https://filipavnunes.github.io/science-memory/main.d89944ba35b23470e81d.js": "89397f0611a607556ec5bf0a2924ef139b8cd252",
+    "https://filipavnunes.github.io/science-memory/index.html": "39e1ab7b3bcc150115b7caab3ade7124719e9fd3",
+    "https://filipavnunes.github.io/science-memory/main.75bf36716d8dd5c67b9d.js": "dcfe1ddb7926e784b4203169554714e175e4fcfa",
     "https://filipavnunes.github.io/science-memory/manifest.webmanifest": "a04f5ec55c5bfd71f0f3cc6dc003cc089bce9570",
     "https://filipavnunes.github.io/science-memory/polyfills.94daefd414b8355106ab.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
     "https://filipavnunes.github.io/science-memory/runtime.7b63b9fd40098a2e8207.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
